@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TechCon 2025 Event Schedule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <h1>TechCon 2025 — Event Schedule</h1>
+        <div class="controls">
+            <div class="filter-group" role="tablist" aria-label="Event Filters">
+                <button class="filter-btn active" data-filter="All" aria-pressed="true">All</button>
+                <button class="filter-btn" data-filter="Talk">Talks</button>
+                <button class="filter-btn" data-filter="Workshop">Workshops</button>
+                <button class="filter-btn" data-filter="Panel">Panels</button>
+                <button class="filter-btn" data-filter="Social">Social</button>
+            </div>
+            <div class="search-and-theme">
+                <label class="search-label" for="search">Search
+                    <input id="search" type="search" placeholder="Search title or description..." />
+                </label>
+                <button id="theme-toggle" aria-pressed="false" title="Toggle dark mode">🌙</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="event-container" class="container" aria-live="polite" aria-atomic="true">
+        <!-- Event cards will be injected here -->
+    </section>
+    <div class="results-info container" aria-live="polite" id="results-info"></div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© <span id="year"></span> Alrights Reserved <strong>Nafla</strong></p>
+    </div>
+</footer>
+
+<script src="scripts/main.js" defer></script>
+</body>
+</html>
